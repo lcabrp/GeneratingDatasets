@@ -1,0 +1,15 @@
+retail_csv_generator/
+├── main.py
+├── db.py               ← <-- NEW
+├── config.py
+├── customers.py
+├── inventory.py
+├── transactions.py
+├── utils.py
+└── requirements.txt
+
+main.py – orchestrates the whole workflow.
+config.py – contains “default” sizes and column lists.
+customers.py, inventory.py, transactions.py – each creates one CSV.
+utils.py – helper functions used by the generators.
+requirements.txt – Python package list.

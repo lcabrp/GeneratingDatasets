@@ -1,0 +1,16 @@
+# Install deps
+pip install -r requirements.txt
+
+# Generate 1 000 customers (default)
+python main.py
+
+# Generate 5 000 customers
+python main.py 5000
+
+How to tweak
+What to change	Where
+Number of customers	DEFAULT_CUSTOMERS in config.py
+Number of inventory items	DEFAULT_INVENTORY in config.py
+Number of transactions (max)	MAX_TRANSACTIONS in config.py (the program caps it)
+Columns	Edit the *_COLUMNS lists in config.py and update the corresponding build_* functions.
+Output folder	Change the paths in config.py or use absolute paths.
